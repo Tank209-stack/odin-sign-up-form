@@ -23,12 +23,13 @@ html, body{
 .main{
     height: 100%;
     width: 100%;
+    display: flex;
 }
 
 /* image - side start here */
 .image-side{
     height: 100%;
-    width: 30%;
+    width: 40%;
     background:url("https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") center/cover ;
 }
 /* transparent background */
@@ -39,7 +40,7 @@ html, body{
     align-items: center;
     height: 17%;
     width: 100%;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.3);
     position: relative;
     top: 150px;
     color: #fff;
@@ -47,11 +48,74 @@ html, body{
     font-family: 'Norse'; 
 }
 div > img{
-    height:80%;
+    height:90%;
     width: 20%;
 }
-p {
+.image-side > p {
     position: absolute;
     bottom: 0; 
     color: #fff;
 }
+
+/* ------form side---------  */
+
+.form-side{
+    height: 100%;
+    width: 60%;
+}
+.text{
+    line-height: 1.2;
+    padding: 100px 30px 20px 40px;
+    top: 10%;
+}
+span{
+    display: block;
+}
+.form-container{
+    padding: 5px;
+    box-shadow: 2px 5px 5px 3px silver;
+}
+.text-2{
+    margin-top: 40px;
+    font-size: 30px;
+    padding: 0 0 15px 40px;
+}
+.form-wrapper{
+    margin: 0px 0px 10px 40px;
+}
+.name-container,.info-container{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.input-label{
+    font-size: 20px;
+    display: block;
+    margin-bottom: 5px;
+}
+.password-container{
+    display: flex;
+    width: 64%;
+    justify-content: space-between;
+}
+input[type = "submit"]{
+    margin: 20px 0 0 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: #596D48;
+    padding: 10px;
+    color: #fff;
+}
+.form-side > p{
+    margin: 10px 0 0 20px;
+    font-size: 20px;
+}
+.input-field:user-invalid{
+    border: 1px solid red;
+}
+.input-field:focus{
+    border: 2px solid blue;
+    outline: none;
+}
+
